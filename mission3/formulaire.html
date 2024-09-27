@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission 3 : formulaire</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Formulaire d'inscription</h1>
-    <form name="formulaire">
+    <center><form name="formulaire">
+        <h1><center>Formulaire d'inscription</center></h1>
         <table>
             <tr>
                 <td><label name="pseudo">Pseudo : </label></td>
@@ -44,7 +45,7 @@
                 <td><input type="text" name="t5" maxlength="6" placeholder="31000"></td>
             </tr><tr>
                 <td><label name="adresse">Adresse : </label></td>
-                <td><textarea name="txta" rows="5" cols="50" maxlength="200" placeholder="123 rue Dupont"></textarea></td>
+                <td><textarea name="txta" rows="5" cols="30" maxlength="200" placeholder="123 rue Dupont"></textarea></td>
             </tr><tr>
                 <td><label name="datenaiss">Date de naissance : </label></td>
                 <td><input type="date" name="dn"></td>
@@ -61,11 +62,11 @@
                 <td><label name="couleur">Couleur : </label></td>
                 <td><input type="color" name="col"></td>
             </tr><tr>
-                <td><button type="submit">Envoyer</button></td>
+                <td colspan="2"><center><button class="button" name="b1" type="submit">Envoyer</button></center></td>
             </tr>
         </table>
 
-    </form>
+    </form></center>
 
     <a href="mission3.html">Retour à la page d'accueil</a>
 

@@ -1,0 +1,28 @@
+body{
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align:center;
+    background-color: rgb(35, 32, 75);
+}
+
+
+form {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    line-height: 250%;
+    background-color:rgb(238, 238, 238) ;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    background-color: rgba(41, 41, 41, 0.178);
+    border-radius: 10px;
+}
+
+.button[type="submit"]:hover {
+    background-color: rgba(53, 53, 53, 0.507);
+}
