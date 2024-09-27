@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 3 : formulaire</title>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form name="formulaire">
+        <table>
+            <tr>
+                <td><label name="pseudo">Pseudo : </label></td>
+                <td><input type="text" name="t1" maxlength="50" placeholder="Pseudo"></td>
+            </tr> <tr>
+                <td><label name="mdp">Mot de passe : </label></td>
+                <td><input type="password" name="pw" maxlength="50" placeholder="Mot de passe"></td>
+            </tr><tr>
+                <td><label name="prenom">Prénom : </label></td>
+                <td><input type="text" name="t2" maxlength="50" placeholder="Prénom"></td>
+            </tr><tr>
+                <td><label name="email">Email : </label></td>
+                <td><input type="text" name="t3" maxlength="100" placeholder="Email"></td>
+            </tr><tr>
+                <td><label name="avatar">Avatar : </label></td>
+                <td><input type="file" name="fichier"></td>
+            </tr><tr>
+                <td><label name="pays">Pays : </label></td>
+                <td><select><option>France</option><option>Espagne</option><option>Italie</option><option>Allemagne</option></select></td>
+            </tr><tr>
+                <td><label name="departement">Département (99 si étranger) : </label></td>
+                <td><input type="number" name="dep" max="999" placeholder="31"></td>
+            </tr><tr>
+                <td><label name="fruits">Quels sont vos fruits préférés ? </label></td>
+                <td> Orange <input type="checkbox" name="c1"> Fraise <input type="checkbox" name="c1"> Poire <input type="checkbox" name="c1"></td>
+            </tr><tr>
+                <td><label name="civil">Civilité : </label></td>
+                <td> Homme : <input type="radio" name="r1"> Femme : <input type="radio" name="r1"></td>
+            </tr><tr>
+                <td><label name="ville">Ville : </label></td>
+                <td><input type="text" name="t4" maxlength="100" placeholder="Toulouse"></td>
+            </tr><tr>
+                <td><label name="cp">Code postal : </label></td>
+                <td><input type="text" name="t5" maxlength="6" placeholder="31000"></td>
+            </tr><tr>
+                <td><label name="adresse">Adresse : </label></td>
+                <td><textarea name="txta" rows="5" cols="50" maxlength="200" placeholder="123 rue Dupont"></textarea></td>
+            </tr><tr>
+                <td><label name="datenaiss">Date de naissance : </label></td>
+                <td><input type="date" name="dn"></td>
+            </tr><tr>
+                <td><label name="jauge">Jauge : </label></td>
+                <td><input type="range" min="0" max="10" name="j"></td>
+            </tr><tr>
+                <td><label name="recherche">Recherche : </label></td>
+                <td><input type="text" name="t6" maxlength="100" placeholder="Mots-clefs"></td>
+            </tr><tr>
+                <td><label name="url">Url : </label></td>
+                <td><input type="text" name="t7" maxlength="300" placeholder="Url"></td>
+            </tr><tr>
+                <td><label name="couleur">Couleur : </label></td>
+                <td><input type="color" name="col"></td>
+            </tr><tr>
+                <td><button type="submit">Envoyer</button></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <a href="mission3.html">Retour à la page d'accueil</a>
+
+</body>
+</html>
