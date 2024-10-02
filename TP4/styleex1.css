@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(219, 219, 173);
+}
+
+.d1 {
+    background-color: blue;
+    float: left;
+    height:200px;
+    width:200px;
+    margin:10px;
+}
+
+.d2 {
+    background-color: green;
+    float: right;
+    height: 200px;
+    width: 150px;
+    margin-left: 20px;
+    }
+
+.d3 {
+    background-color: orangered;
+    clear:both;
+    height:180px;
+    width:150px;
+    margin-left:20px;
+}
