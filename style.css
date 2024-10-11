@@ -1,34 +1,100 @@
 body {
     background-color: rgb(53, 13, 82);
-    text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
-header {
+header{
     color:antiquewhite;
+    text-align: center;
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+
+.sous li{
+    float:none;
+    text-align: left;
+    width:100%;
+    background-color: blueviolet;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+
+
+nav a{
+    margin:10px;
+    color: antiquewhite;
+}
+
+nav a:hover{
+    font-weight: bold;
+    color: rgb(218, 203, 0);
+}
+
+
+
+.sous {
+    display:none;
+    position: absolute;
+    width:100%;
+    z-index: 1000;
+}
+
+input:checked .sous{
+    display: block;
+}
+
+.check{
+    color:antiquewhite;
+}
+
+nav > ul li:hover .sous{
+    display:block;
+}
+
+
+@media screen and (max-width:900px) {
+    
+    nav ul li{
+        vertical-align: middle;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        float: none;
+        width:100%;
+        text-align: center;
     }
 
-.d1 {
-    margin-top: auto;
-    background-color: indigo;
-    padding:auto;
-    line-height:50px;
-    border-radius: 10px;
+    nav{
+        background-color: rgb(0, 110, 255);
+    }
 }
 
-button{
-    border-radius: 10px;
-    padding: 10px;
-    size: 90px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(92, 89, 117, 0.322);
-    border-width: 0;
-    color: aqua;
-}
+@media screen and (min-width:901px) {
+    nav {
+        background-color: rgba(218, 0, 120, 0.795);
+    }
 
-button:hover{
-    background-color: rgba(218, 0, 120, 0.795);
-    transition: 0.5s;
-    box-shadow: 90%;
-    color:yellow;
+    nav ul li{
+        float:left;
+        width:fit-content;
+        position:relative;
+        width:10%;
+        padding:5px;
+        border: 2px solid transparent;
+        text-align: center;
+        
+    }
+
+    nav ul li:hover{
+        border: 2px solid rgb(218, 203, 0);
+    }
+
 }
