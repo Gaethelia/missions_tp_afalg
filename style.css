@@ -3,6 +3,10 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+p{
+    color:antiquewhite;
+}
+
 header{
     color:antiquewhite;
     text-align: center;
