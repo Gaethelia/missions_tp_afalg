@@ -17,12 +17,18 @@ nav ul{
     list-style-type: none;
 }
 
+nav a{
+    margin-top:10px;
+    color: antiquewhite;
+    font-size: larger;
+    text-decoration: none;
+}
 
-.sous li{
-    float:none;
-    text-align: left;
-    width:100%;
-    background-color: blueviolet;
+a:hover{
+    color:rgb(244, 244, 0);
+}
+nav li:hover a{
+    font-weight: bold;
 }
 
 .clearfix:after {
@@ -31,30 +37,12 @@ nav ul{
     clear:both;
 }
 
-
-
-nav a{
-    margin:10px;
-    color: antiquewhite;
-}
-
-nav a:hover{
-    font-weight: bold;
-    color: rgb(218, 203, 0);
-}
-
-
-
 .sous {
     display:none;
-    position: absolute;
-    width:100%;
-    z-index: 1000;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-input:checked .sous{
-    display: block;
-}
 
 .check{
     color:antiquewhite;
@@ -63,12 +51,18 @@ input:checked .sous{
 nav > ul li:hover .sous{
     display:block;
 }
+input[type=checkbox]:checked~nav > ul li .sous{
+    display:block;
+}
+nav > ul > .sous{
+    display:block;
+}
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1050px) {
     
+
     nav ul li{
-        vertical-align: middle;
         padding-bottom: 5px;
         padding-top: 5px;
         float: none;
@@ -77,14 +71,30 @@ nav > ul li:hover .sous{
     }
 
     nav{
-        background-color: rgb(0, 110, 255);
+        background-color: rgb(11, 143, 143);
+        width:108%;
+        margin-left:-3%;
+    }
+
+    .sous li{
+        float:none;
+        text-align: center;
+        width:108%;
+        background-color: blueviolet;
+        margin-left: -8%;
+        text-indent: 8%;
     }
 }
 
-@media screen and (min-width:901px) {
+@media screen and (min-width:1051px) {
     nav {
         background-color: rgba(218, 0, 120, 0.795);
     }
+
+    .check{
+        display: none;
+    }
+
 
     nav ul li{
         float:left;
@@ -95,6 +105,24 @@ nav > ul li:hover .sous{
         border: 2px solid transparent;
         text-align: center;
         
+    }
+
+
+    .sous {
+        display:none;
+        position: absolute;
+        width:100%;
+        z-index: 1000;
+        margin-top: 7px;
+        margin-left: 3%;
+    }
+
+    .sous li{
+        float:none;
+        text-align: left;
+        width:80%;
+        background-color: blueviolet;
+        margin-left: 0;
     }
 
     nav ul li:hover{
