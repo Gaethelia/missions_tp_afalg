@@ -13,28 +13,91 @@
     <div class="contenant">
         <div class="exercice">
             <p><b>Exercice 1</b><br>
-            Consigne de l'exercice.</p>
-            <div id="solution" class="solution">
+            Demander 3 valeurs a l'utilisateur, en faire la somme et la moyenne, et renvoyer le résultat dans une nouvelle page web.</p>
+            <div id='solution1' class="solution">
                 <p>
-                    code solution de l'exercice
+                    let n1 = prompt("Saisir nombre 1");<br>
+                    let n2 = prompt("Saisir nombre 2");<br>
+                    let n3 = prompt("Saisir nombre 3");<br>
+                    <br>
+                    let somme = Number(n1) + Number(n2) + Number(n3);<br>
+                    let moyenne = somme/3;<br>
+                    <br>
+                    let fenetre = window.open();<br>
+                    <br>
+                    fenetre.document.write("Voici la somme : " + somme + " et voici la moyenne :" + moyenne);
                 </p>
             </div>
-            <button onclick="solution()">Solution</button> 
+            <button onclick="solution1()";>Solution</button> 
             <!-- Bouton 1 = affiche le div contenant le code solution-->
 
-            <button onclick="demo_ex1()">Démonstration</button>
+            <button onclick="demo_ex1()";>Démonstration</button>
             <!-- Bouton 2 = lance un programme qui montre ce à quoi doit ressembler le résultat de l'exo-->
         </div>
         <div class="exercice">
             <p><b>Exercice 2</b><br>
-                Consigne de l'exercice.</p>
-            <div class="solution">
-                <p>
-                    Code solution de l'exercice
-                </p>
-            </div>
-            <button>Solution</button> <button>Démonstration</button>
-        </div>        
+                Changer l'arrière plan de la page web.</p>
+                <div id='solution2' class="solution">
+                    <p>
+                        function demo_ex2(){<br>
+                            let couleur = prompt('Entrer rouge, bleu ou vert en minuscules');<br>
+                            if (couleur=='rouge'){<br>
+                                document.body.style.backgroundColor = 'red';}<br>
+                            else if (couleur=='bleu'){<br>
+                                document.body.style.backgroundColor = 'blue';}<br>
+                            else if(couleur=='vert'){<br>
+                                document.body.style.backgroundColor = 'green';}<br>
+                            else {<br>
+                                document.body.style.backgroundColor = 'beige';}<br>
+                        }
+                    </p>
+                </div>
+                <button onclick="solution2()";>Solution</button>
+                <button onclick="demo_ex2()";>Démonstration</button>
+        </div>
+        <div class="exercice">
+            <p><b>Exercice 3</b><br>
+                Ecrire un programme qui fait deviner un nombre entre 1 et 100. Le programme doit pouvoir être quitté. </p>
+                <div id='solution3' class="solution">
+                    <p>
+                        function demo_ex3(){<br>
+                            let aleatoire = Math.floor(Math.random() * 101);<br>
+                            let reponse = prompt("Tapez END pour mettre fin au jeu. Quel est le nombre aléatoire entre 0 et 100 choisi par l'ordinateur ?");<br>
+                            while(reponse!=aleatoire){<br>
+                                if (reponse>aleatoire){<br>
+                                    reponse = prompt('Trop grand ! Réessayez :');<br>
+                                }<br>
+                                else if (reponse<aleatoire) { <br>
+                                    reponse = prompt('Trop petit ! Réessayez :');}<br>
+                                else if (reponse=='END'){<br>
+                                    break;<br>
+                                }<br>
+                                else{<br>
+                                    reponse = prompt("Ce n'est pas un nombre ! Tapez END pour mettre fin au jeu. Quel est le nombre aléatoire entre 0 et 100 choisi par l'ordinateur ?");<br>
+                                }<br>
+                            alert("Le nombre était "+aleatoire+" :D")}}
+                    </p>
+                </div>
+                <button onclick="solution3()";>Solution</button>
+                <button onclick="demo_ex3()";>Démonstration</button>
+        </div>
+        <div class="exercice">
+            <p><b>Exercice 4</b><br>
+                Ouvrir une nouvelle page, la fermer automatiquement si l'utilisateur confirme. </p>
+                <div id='solution4' class="solution">
+                    <p>
+                        function demo_ex4(){<br>
+                            let fenetre = window.open()<br>
+                            let tf = fenetre.confirm('Voulez vous fermer la page ?')<br>
+                            if (tf==true){<br>
+                                fenetre.window.close()<br>
+                            }<br>
+                            }
+                    </p>
+                </div>
+                <button onclick="solution4()";>Solution</button>
+                <button onclick="demo_ex4()";>Démonstration</button>
+        </div>
     </div>
 </body>
 </html>
